@@ -1,0 +1,24 @@
+{
+  "name": "shopifychallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "express-validator": "^6.14.0",
+    "mongoose": "^6.3.3"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.0",
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "server": "nodemon backend/app.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "gagetylee",
+  "license": "ISC"
+}
